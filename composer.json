@@ -1,6 +1,12 @@
 {
   "name": "mammut-alex/polyglot",
-  "description": "Trans from DB",
+  "description": "Organization of multilingualism by using Database creates their operating principles of multilingualism but only makes it easy to switch",
+  "keywords": [
+    "laravel",
+    "DB",
+    "translation",
+    "simple"
+  ],
   "type": "library",
   "license": "MTI",
   "authors": [
