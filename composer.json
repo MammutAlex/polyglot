@@ -1,0 +1,21 @@
+{
+  "name": "mammut-alex/polyglot",
+  "description": "Trans from DB",
+  "type": "library",
+  "license": "MTI",
+  "authors": [
+    {
+      "name": "MammutCris",
+      "email": "mammutcris@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "MammutAlex\\Polyglot\\": "src"
+    }
+  }
+}
