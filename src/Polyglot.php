@@ -8,7 +8,7 @@
  */
 namespace MammutAlex\Polyglot;
 
-use Illuminate\Foundation\Application;
+use Illuminate\Support\Facades\App;
 /**
  * Class Polyglot translation model data
  *
