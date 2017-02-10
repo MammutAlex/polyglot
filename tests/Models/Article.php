@@ -8,6 +8,8 @@ class Article extends Model
 {
 	use Polyglot;
 
+	protected $table = 'articles';
+
 	public function title()
 	{
 		return $this->translation('title');
@@ -18,11 +20,12 @@ class Article extends Model
 		return $this->translation('text');
 	}
 
-	public function hello()
+	public function textRu()
 	{
-		return 'hello word';
+		return $this->translation('text', 'ru');
 	}
-
-	protected $table = 'articles';
-	protected $guarded = [];
+	public function textYouLang($lang)
+	{
+		return $this->translation('text', $lang);
+	}
 }

@@ -34,4 +34,20 @@ class TransArticlesTest extends TestCase
 		App::setLocale('uk');
 		$this->assertTrue($article->text() == "Текст про привіт світ");
 	}
+
+	public function testTransToRuInLangEn()
+	{
+		$article = Article::find(1);
+
+		App::setLocale('en');
+		$this->assertTrue($article->textRu() == "Текст о привет мир");
+	}
+
+	public function testTransToYouLangInLangEn()
+	{
+		$article = Article::find(1);
+
+		App::setLocale('en');
+		$this->assertTrue($article->textYouLang('ru') == "Текст о привет мир");
+	}
 }

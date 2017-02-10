@@ -9,6 +9,7 @@
 namespace MammutAlex\Polyglot;
 
 use Illuminate\Support\Facades\App;
+
 /**
  * Class Polyglot translation model data
  *
@@ -19,12 +20,17 @@ trait Polyglot
 	/**
 	 * Translation data from DB
 	 *
-	 * @param $name
+	 * @param      $name
+	 * @param      $locale
 	 *
 	 * @return mixed
 	 */
-	public function translation($name)
+	public function translation($name, $locale = false)
 	{
-		return $this->{$name.'_'.App::getLocale()};
+		if(!$locale) {
+			$locale = App::getLocale();
+		}
+
+		return $this->{$name.'_'.$locale};
 	}
 }
