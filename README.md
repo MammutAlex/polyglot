@@ -38,3 +38,8 @@ class YouModel extends Model
     ...
 ```
 The function will return the translation in the selected language user
+
+An example of the use in blade:
+```
+<h1>{{$model->name()}}</h1>
+```
