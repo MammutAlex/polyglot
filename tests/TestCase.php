@@ -1,9 +1,7 @@
 <?php
 namespace MammutAlex\Polyglot\Test;
 
-use DatabaseSeeder;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Tests\CreatesApplication;
