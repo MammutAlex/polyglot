@@ -1,4 +1,5 @@
 # polyglot
+[![Build Status](https://travis-ci.org/MammutAlex/polyglot.svg?branch=master)](https://travis-ci.org/MammutAlex/polyglot)
 [![Total Downloads](https://poser.pugx.org/mammut-alex/polyglot/downloads)](https://packagist.org/packages/mammut-alex/polyglot)
 [![Latest Stable Version](https://poser.pugx.org/mammut-alex/polyglot/v/stable)](https://packagist.org/packages/mammut-alex/polyglot)
 [![License](https://poser.pugx.org/mammut-alex/polyglot/license)](https://packagist.org/packages/mammut-alex/polyglot)
