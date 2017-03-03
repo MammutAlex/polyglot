@@ -17,20 +17,48 @@ use Illuminate\Support\Facades\App;
  */
 trait Polyglot
 {
-	/**
-	 * Translation data from DB
-	 *
-	 * @param      $name
-	 * @param      $locale
-	 *
-	 * @return mixed
-	 */
-	public function translation($name, $locale = false)
-	{
-		if(!$locale) {
-			$locale = App::getLocale();
-		}
 
-		return $this->{$name.'_'.$locale};
-	}
+    /**
+     * Translation data from DB
+     *
+     * @param      $name
+     * @param      $locale
+     *
+     * @return mixed
+     */
+    public function translation($name, $locale = null)
+    {
+        if ($locale) {
+            return $this->templateMultiLangColumn($name, $locale);
+        }
+
+        return $this->transLaravelLocale($name);
+    }
+
+
+    /**
+     * Trans data width laravel locale
+     *
+     * @param $name
+     *
+     * @return mixed
+     */
+    private function transLaravelLocale($name)
+    {
+        return $this->templateMultiLangColumn($name, App::getLocale());
+    }
+
+
+    /**
+     * Trans data width customer locale
+     *
+     * @param $name
+     * @param $locale
+     *
+     * @return mixed
+     */
+    private function templateMultiLangColumn($name, $locale)
+    {
+        return $this->{$name.'_'.$locale};
+    }
 }
