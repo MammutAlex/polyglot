@@ -10,6 +10,8 @@ Require this package in your `composer.json` and update composer.
 ```php
 "mammut-alex/polyglot": "0.1.*"
 ```
+
+or `composer require mammut-alex/polyglot`
 # Documentation
 Translator works with a database, it looks for a prefix code language
 

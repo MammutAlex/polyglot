@@ -1,11 +1,11 @@
 {
   "name": "mammut-alex/polyglot",
-  "description": "Organization of DB multilingualism in laravel, easy to switch",
+  "description": "Translate model column in laravel",
   "keywords": [
     "laravel",
-    "DB",
-    "translation",
-    "simple"
+    "translate",
+    "model",
+    "database"
   ],
   "type": "library",
   "license": "MIT",
