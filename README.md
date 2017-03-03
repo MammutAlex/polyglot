@@ -3,6 +3,7 @@
 [![Total Downloads](https://poser.pugx.org/mammut-alex/polyglot/downloads)](https://packagist.org/packages/mammut-alex/polyglot)
 [![Latest Stable Version](https://poser.pugx.org/mammut-alex/polyglot/v/stable)](https://packagist.org/packages/mammut-alex/polyglot)
 [![License](https://poser.pugx.org/mammut-alex/polyglot/license)](https://packagist.org/packages/mammut-alex/polyglot)
+[![Code Climate](https://lima.codeclimate.com/github/MammutAlex/polyglot/badges/gpa.svg)](https://lima.codeclimate.com/github/MammutAlex/polyglot)
 
 #Installation
 Require this package in your `composer.json` and update composer.
