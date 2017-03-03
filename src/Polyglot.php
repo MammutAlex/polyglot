@@ -4,22 +4,20 @@
  * Created by PhpStorm.
  * User: mammut
  * Date: 07.02.17
- * Time: 10:40
+ * Time: 10:40.
  */
+
 namespace MammutAlex\Polyglot;
 
 use Illuminate\Support\Facades\App;
 
 /**
- * Class Polyglot translation model data
- *
- * @package App
+ * Class Polyglot translation model data.
  */
 trait Polyglot
 {
-
     /**
-     * Translation data from DB
+     * Translation data from DB.
      *
      * @param      $name
      * @param      $locale
@@ -35,9 +33,8 @@ trait Polyglot
         return $this->transLaravelLocale($name);
     }
 
-
     /**
-     * Trans data width laravel locale
+     * Trans data width laravel locale.
      *
      * @param $name
      *
@@ -48,9 +45,8 @@ trait Polyglot
         return $this->templateMultiLangColumn($name, App::getLocale());
     }
 
-
     /**
-     * Trans data width customer locale
+     * Trans data width customer locale.
      *
      * @param $name
      * @param $locale
