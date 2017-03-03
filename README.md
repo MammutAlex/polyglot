@@ -1,11 +1,12 @@
-# polyglot
+# Polyglot
 [![Build Status](https://travis-ci.org/MammutAlex/polyglot.svg?branch=master)](https://travis-ci.org/MammutAlex/polyglot)
 [![Total Downloads](https://poser.pugx.org/mammut-alex/polyglot/downloads)](https://packagist.org/packages/mammut-alex/polyglot)
 [![Latest Stable Version](https://poser.pugx.org/mammut-alex/polyglot/v/stable)](https://packagist.org/packages/mammut-alex/polyglot)
 [![License](https://poser.pugx.org/mammut-alex/polyglot/license)](https://packagist.org/packages/mammut-alex/polyglot)
 [![Code Climate](https://lima.codeclimate.com/github/MammutAlex/polyglot/badges/gpa.svg)](https://lima.codeclimate.com/github/MammutAlex/polyglot)
+[![StyleCI](https://styleci.io/repos/81186920/shield?branch=master)](https://styleci.io/repos/81186920)
 
-#Installation
+##Installation
 Require this package in your `composer.json` and update composer.
 
 ```php
@@ -13,7 +14,7 @@ Require this package in your `composer.json` and update composer.
 ```
 
 or `composer require mammut-alex/polyglot`
-# Documentation
+## Documentation
 Translator works with a database, it looks for a prefix code language
 
 Here is an example Migration
