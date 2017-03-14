@@ -7,7 +7,6 @@ use MammutAlex\Polyglot\Test\Models\Post;
 
 class TransPostsTest extends TestCase
 {
-
     public function testTitleLocale()
     {
         $post = Post::find(1);
@@ -21,7 +20,6 @@ class TransPostsTest extends TestCase
         App::setLocale('en');
         $this->assertTrue($post->title() == 'Hello Word');
     }
-
 
     public function testTextLocale()
     {
@@ -37,7 +35,6 @@ class TransPostsTest extends TestCase
         $this->assertTrue($post->text() == 'Текст про привіт світ');
     }
 
-
     public function testTransToRuInLangEn()
     {
         $post = Post::find(1);
@@ -45,7 +42,6 @@ class TransPostsTest extends TestCase
         App::setLocale('en');
         $this->assertTrue($post->textRu() == 'Текст о привет мир');
     }
-
 
     public function testTransToYouLangInLangEn()
     {

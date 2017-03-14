@@ -9,9 +9,7 @@ use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 
 abstract class TestCase extends BaseTestCase
 {
-
     use CreatesApplication;
-
 
     public function setUp()
     {
@@ -26,12 +24,10 @@ abstract class TestCase extends BaseTestCase
         $this->migrate();
     }
 
-
     public function getTempDirectory()
     {
         return __DIR__.'/temp';
     }
-
 
     public function migrate()
     {
@@ -40,7 +36,6 @@ abstract class TestCase extends BaseTestCase
         $this->seedArticles();
         $this->seedPosts();
     }
-
 
     private function createArticles()
     {
@@ -56,7 +51,6 @@ abstract class TestCase extends BaseTestCase
         });
     }
 
-
     private function createPosts()
     {
         Schema::create('posts', function ($table) {
@@ -71,7 +65,6 @@ abstract class TestCase extends BaseTestCase
         });
     }
 
-
     private function seedArticles()
     {
         DB::table('articles')->insert([
@@ -83,7 +76,6 @@ abstract class TestCase extends BaseTestCase
             'text_uk'  => 'Текст про привіт світ',
         ]);
     }
-
 
     private function seedPosts()
     {
