@@ -10,7 +10,7 @@
 Require this package in your `composer.json` and update composer.
 
 ```php
-"mammut-alex/polyglot": "0.1.*"
+"mammut-alex/polyglot": "0.2.*"
 ```
 
 or `composer require mammut-alex/polyglot`
