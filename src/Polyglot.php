@@ -33,6 +33,7 @@ trait Polyglot
         return $this->transLaravelLocale($name);
     }
 
+
     /**
      * Trans data width laravel locale.
      *
@@ -45,6 +46,7 @@ trait Polyglot
         return $this->templateMultiLangColumn($name, App::getLocale());
     }
 
+
     /**
      * Trans data width customer locale.
      *
@@ -55,6 +57,16 @@ trait Polyglot
      */
     private function templateMultiLangColumn($name, $locale)
     {
-        return $this->{$name.'_'.$locale};
+        if (isset($this->defaultLang) and $locale == $this->defaultLang) {
+            return $this->{$name};
+        }
+
+        return $this->{$this->transformTemplate($name, $locale)};
+    }
+
+
+    public function transformTemplate($name, $locale)
+    {
+        return $name.'_'.$locale;
     }
 }

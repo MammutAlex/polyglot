@@ -48,3 +48,5 @@ An example of the use in blade:
 ```
 <h1>{{$model->name()}}</h1>
 ```
+
+See more example in tests, documentation being developed
