@@ -6,7 +6,7 @@
 [![Code Climate](https://lima.codeclimate.com/github/MammutAlex/polyglot/badges/gpa.svg)](https://lima.codeclimate.com/github/MammutAlex/polyglot)
 [![StyleCI](https://styleci.io/repos/81186920/shield?branch=master)](https://styleci.io/repos/81186920)
 
-##Installation
+## Installation
 Require this package in your `composer.json` and update composer.
 
 ```php
